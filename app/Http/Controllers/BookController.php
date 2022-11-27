@@ -28,7 +28,7 @@ class BookController extends Controller
     public function index()
     {
         $book = $this->objBook->all();
-        return view('index', compact('book'));;
+        return view('index', compact('book'));
     }
 
     /**
@@ -60,7 +60,8 @@ class BookController extends Controller
      */
     public function show($id)
     {
-        //
+        $book=$this->objBook->find($id);
+        return view('show',compact('book'));
     }
 
     /**

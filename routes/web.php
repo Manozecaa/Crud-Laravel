@@ -13,6 +13,6 @@ use App\Http\Controllers\BookController;
 |
 */
 
-Route::resource('/', BookController::class);
+Route::resource('/books', BookController::class);
 
 
